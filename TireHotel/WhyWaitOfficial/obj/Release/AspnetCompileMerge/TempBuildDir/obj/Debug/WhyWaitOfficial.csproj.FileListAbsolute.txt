@@ -1,0 +1,134 @@
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\ApplicationInsights.config
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.exe
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.exe.config
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.rsp
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csi.exe
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csi.rsp
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.AppContext.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Collections.Immutable.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.IO.FileSystem.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.exe
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.exe.config
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.rsp
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\VBCSCompiler.exe
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\VBCSCompiler.exe.config
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.dll.config
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.pdb
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Newtonsoft.Json.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Net.Http.Formatting.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Helpers.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.WebHost.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Mvc.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Optimization.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Razor.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.Deployment.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.Razor.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Antlr3.Runtime.pdb
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\EntityFramework.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\EntityFramework.SqlServer.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Google.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.Owin.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.ApplicationInsights.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.WindowsServer.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.Web.xml
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.csprojResolveAssemblyReference.cache
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.dll
+c:\users\davidmugwanyassezibw\documents\visual studio 2017\Projects\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.pdb
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\ApplicationInsights.config
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.exe
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.exe.config
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csc.rsp
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csi.exe
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\csi.rsp
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.AppContext.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.exe
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.exe.config
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\vbc.rsp
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\VBCSCompiler.exe
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.dll.config
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\WhyWaitOfficial.pdb
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Newtonsoft.Json.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Net.Http.Formatting.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Helpers.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.WebHost.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Mvc.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Optimization.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Razor.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.WebPages.Razor.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Antlr3.Runtime.pdb
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\EntityFramework.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\EntityFramework.SqlServer.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\System.Web.Http.Owin.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\bin\Microsoft.AI.Web.xml
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.csprojResolveAssemblyReference.cache
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.csproj.CoreCompileInputs.cache
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.dll
+C:\Users\joaoc\Downloads\WhyWaitOfficial\WhyWaitOfficial\obj\Debug\WhyWaitOfficial.pdb
+<Content Include="obj\Debug\build.force" />

@@ -1,0 +1,778 @@
+﻿@{
+
+  Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WWAIT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="~/Content/bootstrap.css" rel="stylesheet" />
+  <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+  <script src="~/Scripts/Angular.js"></script>
+  <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="~/Content/StyleSheet2.css" rel="stylesheet" />
+  <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+  <script src="~/Scripts/angular.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar__header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="logo" src="~/images/wwait3.png"></a>
+      </div>
+
+      <div class="navbar-collapse collapse pull-left">
+        <ul class="nav navbar-nav">
+          <li><a href="#PostJob" name="modal">Post Job</a></li>
+          <li><a href="#SearchJob" name="modal">Search Job</a></li>
+          <li><a href="#Groups" name="modal">Groups</a></li>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse pull-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#dialog2" name="modal">Register</a></li>
+          <li><a href="#dialog" name="modal">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+
+
+
+
+        <div id="boxes">
+
+          <!-- #customize your modal window here -->
+
+          <div id="dialog" class="window container">
+
+            <div class="form-body">
+              <ul class="nav nav-tabs final-login">
+                <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+                <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="sectionA" class="tab-pane fade in active ">
+                  <div class="innter-form">
+                    <form class="sa-innate-form" method="post">
+                      <label>Email Address</label>
+                      <input type="text" name="username" placeholder="Username">
+                      <label>Password</label>
+                      <input type="password" name="password" placeholder="Password">
+                      <button type="submit">Sign In</button>
+                      <a href="">Forgot Password?</a>
+                    </form>
+                  </div>
+                  <div class="social-login">
+                    <p>- - - - - - - - - - - - - Login With - - - - - - - - - - - - - </p>
+                    <ul>
+                      <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                      <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                      <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div id="sectionB" class="tab-pane fade">
+                  <div class="innter-form">
+                    <form class="sa-innate-form" method="post">
+                      <label>Name</label>
+                      <input type="text" name="username" placeholder="UserName">
+                      <label>Email Address</label>
+                      <input type="text" name="username">
+                      <label>Password</label>
+                      <input type="password" name="password">
+                      <button type="submit">Join now</button>
+                      <p>By clicking Join now, you agree to Wwait's User <a>Agreement</a>,<a>Privacy Policy</a>, and <a>Cookie Policy.</a></p>
+                    </form>
+                  </div>
+                  <div class="social-login ">
+                    <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                    <ul>
+
+                      <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                      <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                      <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostJob" class="window container">
+
+              <div class="form-body">
+                <ul class="nav nav-tabs final-login">
+                  <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+                  <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="sectionA" class="tab-pane fade in active ">
+                    <div class="innter-form">
+                      <form class="sa-innate-form" method="post">
+                        <label>Email Address</label>
+                        <input type="text" name="username" placeholder="Username">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit">Sign In</button>
+                        <a href="">Forgot Password?</a>
+                      </form>
+                    </div>
+                    <div class="social-login">
+                      <p>- - - - - - - - - - - - - Login With - - - - - - - - - - - - - </p>
+                      <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div id="sectionB" class="tab-pane fade">
+                    <div class="innter-form">
+                      <form class="sa-innate-form" method="post">
+                        <label>Name</label>
+                        <input type="text" name="username" placeholder="UserName">
+                        <label>Email Address</label>
+                        <input type="text" name="username">
+                        <label>Password</label>
+                        <input type="password" name="password">
+                        <button type="submit">Join now</button>
+                        <p>By clicking Join now, you agree to Wwait's User <a>Agreement</a>,<a>Privacy Policy</a>, and <a>Cookie Policy.</a></p>
+                      </form>
+                    </div>
+                    <div class="social-login ">
+                      <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                      <ul>
+
+                        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- close button is defined as close class -->
+
+            </div>
+
+            <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+            <div id="mask"></div>
+          </div>
+
+
+        </div>
+
+        <div class="container">
+
+
+
+
+          <div id="boxes">
+
+            <!-- #customize your modal window here -->
+
+            <div id="dialog2" class="window container">
+
+              <div class="form-body">
+                <ul class="nav nav-tabs final-login">
+
+                  <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+
+                </ul>
+                <div class="tab-content">
+
+                  <div id="sectionB" class="tab-pane fade in active">
+                    <div class="innter-form">
+                      <form class="sa-innate-form" method="post">
+                        <label>Name</label>
+                        <input type="text" name="username" placeholder="Username">
+                        <label>Email Address</label>
+                        <input type="text" name="Email" placeholder="Email">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit">Join now</button>
+                        <p>By clicking Join now, you agree to Wwait's User <a>Agreement</a>,<a>Privacy Policy</a>, and <a>Cookie Policy.</a></p>
+                      </form>
+                    </div>
+                    <div class="social-login">
+                      <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                      <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <!-- close button is defined as close class -->
+
+            </div>
+
+            <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+            <div id="mask"></div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      @*map size can be moved to css file*@
+      <style>
+        #map {
+          height: 800px;
+          width: 50%;
+        }
+
+        .samping {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          height: 100%;
+          width: 30%;
+          overflow: auto
+        }
+
+          .samping div {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box
+          }
+
+        #searchJobs {
+          height: 800px;
+          width: 50%;
+        }
+
+        #searchButtons {
+          height: 100px;
+          box-sizing: border-box
+        }
+
+        #searchLocationDIV {
+          width: 50%;
+        }
+
+        #searchLocation {
+          width: 90%;
+        }
+
+        #searchLocationB {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 140px 0px 0px 130px;
+        }
+
+        #filterLocationDIV {
+          width: 50%;
+        }
+
+        #filterLocation {
+          width: 90%;
+        }
+      </style>
+
+
+  </header>
+
+  @*Map position and basic necessary functions*@
+  <div class="hero-text text-center">
+
+    <div class="subtitle">
+      <script>
+        //Load lat a lng from browser
+        window.onload = function LoadCoordinates() {
+          function ParseURLParameters(Parameter) {
+            var FullURL = window.location.search.substring(1);
+            var ParametersArray = FullURL.split('&');
+
+            for (var i = 0; i < ParametersArray.length; i++) {
+              var CurrentParameter = ParametersArray[i].split('=');
+              if (CurrentParameter[0] == Parameter) {
+                return CurrentParameter[1];
+              }
+            }
+          }
+
+          var latURL = ParseURLParameters('lat');
+          var lngURL = ParseURLParameters('lng');
+
+          if (typeof latURL !== 'undefined' || typeof lngURL !== 'undefined') {
+            OpenMapWithURL(latURL, lngURL);
+          } else {
+            alert('No Page Parameter Found');
+          }
+        }
+        function OpenMapWithURL(lat, lng) {
+          /*calling initialize function*/
+          google.maps.event.addDomListener(window, 'load', initialize(lat, lng));
+          document.getElementById('MapSection').style.display = "block";
+
+        }
+
+      </script>
+
+      <div id="searchButtons">
+        <div id="searchLocationDIV" style="float: left;">
+          <div id="searchLocation">
+            <input type="text" id="StartPosition" placeholder="Where do you want to search?" title="StartPosition" />
+          </div>
+          <div id="serachLocationB">
+            <button id="SearchLocation" onclick="OpenMapWithLocation()">Search</button>
+          </div>
+        </div>
+        <div id="filterLocationDIV" style="float: right;">
+          <div id="filterLocation">
+            <div id="buttons">
+
+              <input type="checkbox" name="filter" id="House" class='chk-btn'>
+              <label for='House'>House</label>
+
+              <input type="checkbox" name="filter" id="Administractive" class='chk-btn'>
+              <label for='Administractive'>Administractive</label>
+
+              <input type="checkbox" name="filter" id="Education" class='chk-btn'>
+              <label for='Education'>Education</label>
+
+              <input type="checkbox" name="filter" id="Catering" class='chk-btn'>
+              <label for='Catering'>Catering</label>
+
+              <input type="checkbox" name="filter" id="Volunteer" class='chk-btn'>
+              <label for='Volunteer'>Volunteer</label>
+
+              <input type="checkbox" name="filter" id="Sport" class='chk-btn'>
+              <label for='Sport'>Sport</label>
+              <br>
+            </div>
+            <style>
+              input.chk-btn {
+                display: none;
+              }
+
+                input.chk-btn + label {
+                  border: 1px solid grey;
+                  background: ghostwhite;
+                  padding: 5px 8px;
+                  cursor: pointer;
+                  border-radius: 5px;
+                }
+
+                input.chk-btn:not(:checked) + label:hover {
+                  box-shadow: 0px 1px 3px;
+                }
+
+                input.chk-btn + label:active,
+                input.chk-btn:checked + label {
+                  box-shadow: 0px 0px 3px inset;
+                  background: #8cc472;
+                }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function OpenMapWithLocation() {
+        var address = $("#StartPosition").val();
+        $.ajax({
+          type: "GET",
+          url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address.replace(/\s+/g, '+') + '&sensor=false&key=AIzaSyAsuDntFAsFjcFWh8oSaQ0kiXSYmdOXOaQ',
+          dataType: "json",
+        }).done(function (data) {
+          document.getElementById('MapSection').style.display = "block";
+          ///*calling initialize function*/
+          google.maps.event.addDomListener(window, 'load', initialize(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng));
+        });
+      }
+      $(function () {
+        $("#Search").click(function () {
+          OpenMapWithLocation();
+        });
+      });
+    </script>
+
+    <div id="MapSection" style="display:none;">
+
+      <div id="map" style="float: left;"></div>
+      <div id="searchJobs" style="float: right;">
+        <div>
+          <table id="example" class="example" cellspacing="0">
+            <thead>
+              <tr>
+                <th style="width: 400px;" align="center">Description</th>
+                <th style="width: 100px;" align="center">Type</th>
+                <th style="width: 100px;" align="center">Location</th>
+                <th style="width: 200px;" align="center">Start date</th>
+                <th style="width: 100px;" align="center">Salary</th>
+                <th style="width: 100px;" align="center">Urgency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiger Nixon</td>
+                <td>House</td>
+                <td>Edinburgh</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>Clean the house</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <style>
+          table.example {
+            table-layout: fixed;
+          }
+
+            table.example td {
+              overflow: hidden;
+            }
+        </style>
+
+        <div id="panel">Place to show street routes</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  @*key needs to be changed*@
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSog_oTV9NjxwOj8mvGkEd9VQZB8hOKHE&region=ID"></script>
+  <script>
+      //Current Icons from google library
+      var iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
+
+      //Icons related to each Type of job
+      var icons = {
+        //Education
+        1: {
+          icon: iconBase + 'info-i_maps.png'
+        },
+        //Catering
+        2: {
+          icon: iconBase + 'dining.png'
+        },
+        //Volunteer
+        3: {
+          icon: iconBase + 'man.png'
+        },
+        //Installation/Repair/Assemble
+        4: {
+          icon: iconBase + 'mechanic.png'
+        },
+        //Administrative
+        5: {
+          icon: iconBase + 'dollar.png',
+          scaledSize: new google.maps.Size(50, 50), // scaled size
+          origin: new google.maps.Point(0, 0), // origin
+          anchor: new google.maps.Point(0, 0) // anchor
+        },
+        //Sport
+        6: {
+          icon: iconBase + 'swimming.png',// This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(10, 20),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 20)
+        },
+        //House
+        7: {
+          icon: iconBase + 'homegardenbusiness.png'
+        }
+      }
+      var category = {
+        //Education
+        1: {
+          cat: "Education"
+        },
+        //Catering
+        2: {
+          cat: "Catering"
+        },
+        //Volunteer
+        3: {
+          cat: "Volunteer"
+        },
+        //Installation
+        4: {
+          cat: "Installation"
+        },
+        //Administrative
+        5: {
+          cat: "Administrative"
+        },
+        //Sport
+        6: {
+          cat: "Sport"
+        },
+        //House
+        7: {
+          cat: "House"
+        }
+      }
+      //Initialize map
+      function initialize(lat, lng) {
+        var options = {
+          zoom: 12,
+          center: {
+            lat: parseFloat(lat),
+            lng: parseFloat(lng)
+          },
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById('map'), options);
+        //Function that gets Jobs from DB
+        findLocation()
+      }
+
+      var filters = { House: false, Sport: false, Education: false, Installation: false, Volunteer: false, Catering: false, Administrative: false }
+
+      $(function () {
+        $('input[name=filter]').change(function (e) {
+          filter_markers(this.id);
+        });
+      })
+
+      var filter_markers = function (CategoryName) {
+        for (i = 0; i < markers.length; i++) {
+          marker = markers[i];
+
+          if (marker.category == CategoryName) {
+            marker.setVisible(filters[CategoryName]);
+          }
+
+        }
+        filters[CategoryName] = !filters[CategoryName];
+      }
+
+      var markers = []
+      function findLocation() {
+        $.ajax({
+          type: "GET",
+          //url is the URL from the API for example: http://localhost:19416/api/Jobs
+          url: "http://localhost:19416/api/Jobs",
+          dataType: "json",
+          error: function (xhr, ajaxOptions, thrownError) {
+            alert(xhr.status);
+            alert(thrownError);
+          },
+          success: function (data) {
+            var d = new google.maps.InfoWindow();
+            var marker;
+            $.each(data, function (i, datab) {
+              marker = new google.maps.Marker({
+                position: new google.maps.LatLng(datab.Lat, datab.Lng),
+                icon: icons[datab.CategoryID].icon,
+                category: category[datab.CategoryID].cat,
+                map: map
+              });
+
+              google.maps.event.addListener(marker, 'click', (function (a, i) {
+                return function () {
+                  d.setContent('<div><h3>' + datab.Address + datab.City + '</h3><p>' + datab.Description + " Start at: " + datab.StartDate + '</p>'
+                    + '<button class="route_b" data-address="' + datab.Address + datab.City + '">Distance</div>');
+                  d.open(map, a)
+                }
+
+
+              })(marker, i))
+
+              //marker.addListener('click', function () {
+              //    $('#campground_info').html(markerInfo)
+              //});
+              markers.push(marker);
+              var tableRef = document.getElementById('example').getElementsByTagName('tbody')[0];
+
+              // Insert a row in the table at the last row
+              var newRow = tableRef.insertRow(tableRef.rows.length);
+
+              // Insert a cell in the row at index 0
+              var newCell_0 = newRow.insertCell(0);
+              // Append a text node to the cell
+              var newText = document.createTextNode(datab.Description);
+              newCell_0.appendChild(newText);
+              var newCell_1 = newRow.insertCell(1);
+              // Append a text node to the cell
+              var newText = document.createTextNode(category[datab.CategoryID].cat);
+              newCell_1.appendChild(newText);
+              var newCell_2 = newRow.insertCell(2);
+              // Append a text node to the cell
+              var newText = document.createTextNode(datab.Address + ", " + datab.City);
+              newCell_2.appendChild(newText);
+              var newCell_3 = newRow.insertCell(3);
+              // Append a text node to the cell
+              var newText = document.createTextNode(datab.StartDate);
+              newCell_3.appendChild(newText);
+              var newCell_4 = newRow.insertCell(4);
+              // Append a text node to the cell
+              var newText = document.createTextNode(datab.Salary);
+              newCell_4.appendChild(newText);
+              var newCell_5 = newRow.insertCell(5);
+              // Append a text node to the cell
+              var newText = document.createTextNode(datab.Urgency);
+              newCell_5.appendChild(newText);
+            });
+          }
+        });
+      }
+  </script>
+  <script type="text/javascript" language="javascript">
+      $(document).ready(function () {
+
+        //select all the a tag with name equal to modal
+        $('a[name=modal]').click(function (e) {
+          //Cancel the link behavior
+          e.preventDefault();
+          //Get the A tag
+          var id = $(this).attr('href');
+
+          //Get the screen height and width
+          var maskHeight = $(document).height();
+          var maskWidth = $(window).width();
+
+          //Set height and width to mask to fill up the whole screen
+          $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+
+          //transition effect
+          $('#mask').fadeIn(1000);
+          $('#mask').fadeTo("slow", 0.8);
+
+          //Get the window height and width
+          var winH = $(window).height();
+          var winW = $(window).width();
+
+          //Set the popup window to center
+          $(id).css('top', winH / 2 - $(id).height() / 2);
+          $(id).css('left', winW / 2 - $(id).width() / 2);
+
+          //transition effect
+          $(id).fadeIn(2000);
+
+        });
+
+        //if close button is clicked
+        $('.window .close').click(function (e) {
+          //Cancel the link behavior
+          e.preventDefault();
+          $('#mask, .window').hide();
+        });
+
+        //if mask is clicked
+        $('#mask').click(function () {
+          $(this).hide();
+          $('.window').hide();
+        });
+
+      });
+  </script>
+
+  <script type="text/javascript" language="javascript">
+      $(function () {
+        $('.button-checkbox').each(function () {
+
+          // Settings
+          var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+              on: {
+                icon: 'glyphicon glyphicon-check'
+              },
+              off: {
+                icon: 'glyphicon glyphicon-unchecked'
+              }
+            };
+
+          // Event Handlers
+          $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+          });
+          $checkbox.on('change', function () {
+            updateDisplay();
+          });
+
+          // Actions
+          function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+              .removeClass()
+              .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+              $button
+                .removeClass('btn-default')
+                .addClass('btn-' + color + ' active');
+            }
+            else {
+              $button
+                .removeClass('btn-' + color + ' active')
+                .addClass('btn-default');
+            }
+          }
+
+          // Initialization
+          function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+              $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
+            }
+          }
+          init();
+        });
+      });
+  </script>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="./js/index.js" type="text/javascript"></script>
+  <div id="campground_info"></div>
+</body>
+</html>

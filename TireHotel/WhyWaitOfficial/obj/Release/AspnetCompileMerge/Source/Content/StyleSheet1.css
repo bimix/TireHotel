@@ -1,0 +1,1011 @@
+﻿body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header {
+    background-image: url(../images/tiles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+    header .navbar-toggle .icon-bar {
+        position: relative;
+        transition: all 500ms ease-in-out;
+    }
+
+        header .navbar-toggle .icon-bar:nth-of-type(2) {
+            top: 1px;
+        }
+
+        header .navbar-toggle .icon-bar:nth-of-type(3) {
+            top: 2px;
+        }
+
+    header .navbar-toggle.active .icon-bar:nth-of-type(1) {
+        top: 6px;
+        transform: rotate(45deg);
+    }
+
+    header .navbar-toggle.active .icon-bar:nth-of-type(2) {
+        background-color: transparent;
+    }
+
+    header .navbar-toggle.active .icon-bar:nth-of-type(3) {
+        top: -6px;
+        transform: rotate(-45deg);
+    }
+
+    header .navbar-collapse {
+        padding-right: 30px;
+        padding-left: 10px;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid transparent;
+        box-shadow: none;
+    }
+
+    header .navbar-inverse .navbar-collapse,
+    header .navbar-inverse .navbar-form {
+        border-color: transparent;
+        padding: 20px;
+    }
+
+    header .navbar-brand img {
+        display: block;
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+
+@media (max-width: 767px) {
+    header .navbar-brand img {
+        width: 55%;
+        margin-top: -15px;
+    }
+}
+
+header .navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+    header .navbar-inverse .navbar-toggle:focus,
+    header .navbar-inverse .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+header .navbar-inverse {
+    background-color: rgba(62, 61, 64, 0.8);
+    border-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    header .navbar-inverse .navbar-nav a.active {
+        color: #fff;
+        background-color: transparent;
+    }
+
+    header .navbar-inverse .navbar-nav a:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transition: 1.25s transform ease,.9s opacity;
+    }
+
+    header .navbar-inverse .navbar-nav li a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    header .navbar-inverse .navbar-nav li:nth-child(5) {
+        margin-right: 0px;
+    }
+
+@media (min-width: 968px) {
+    header .navbar-inverse .navbar-nav li:nth-child(5) {
+        margin-right: 10vw;
+    }
+}
+
+header .navbar-inverse .navbar-nav li:nth-child(6), header .navbar-inverse .navbar-nav li:nth-child(7) {
+    border:none ;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    header .navbar-inverse .navbar-nav li:nth-child(6), header .navbar-inverse .navbar-nav li:nth-child(7) {
+        border: none;
+        margin-left: 0px;
+    }
+}
+
+header .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+    header .hero-text h1 {
+        color: #3E3D40;
+        font-size: 5vw;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bolder;
+    }
+
+@media (min-width: 968px) {
+    header .hero-text h1 {
+        font-size: 3vw;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+header .hero-text h2 {
+    color: #3E3D40;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
+
+@media (min-width: 968px) {
+    header .hero-text h2 {
+        font-size: 3vw;
+        margin-top: 3rem;
+    }
+}
+
+header .hero-text img {
+    margin-top: 7rem;
+}
+
+@media (max-width: 767px) {
+    header .hero-text img {
+        width: 30%;
+    }
+}
+
+header .hero-text .employees {
+    margin-bottom: 7rem;
+}
+
+.how-works {
+    background-image: url(../images/works.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 4rem;
+}
+
+    .how-works h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+
+    .how-works h3 {
+        color: #fff;
+    }
+
+    .how-works p {
+        color: #fff;
+        font-size: 130%;
+    }
+
+@media (max-width: 767px) {
+    .how-works p {
+        font-size: 100%;
+    }
+}
+
+.how-works img {
+    width: 20%;
+    margin-top: 3rem;
+}
+
+.how-works .item {
+    margin-bottom: 6rem;
+}
+
+.categories {
+    padding-bottom: 5rem;
+    background-color: #fff;
+}
+
+    .categories .title h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #333;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+
+    .categories .title p {
+        font-size: 130%;
+        color: grey;
+    }
+
+@media (max-width: 767px) {
+    .categories .title p {
+        font-size: 100%;
+        margin-bottom: 0rem;
+    }
+}
+
+.categories .items .item {
+    margin-top: 3rem;
+}
+
+    .categories .items .item img {
+        width: 25%;
+    }
+
+    .categories .items .item h3 {
+        text-transform: uppercase;
+        font-size: 130%;
+    }
+
+    .categories .items .item p {
+        width: 100%;
+        height: 100px;
+    }
+
+.benefits {
+    background-image: url(../images/desk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 4rem;
+}
+
+    .benefits h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+
+    .benefits p {
+        color: #fff;
+        font-size: 130%;
+    }
+
+@media (max-width: 767px) {
+    .benefits p {
+        font-size: 100%;
+    }
+}
+
+.benefits .field h3 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.benefits .field p {
+    width: 95%;
+    height: 190px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+@media (max-width: 767px) {
+    .benefits .field p {
+        height: 130px;
+    }
+}
+
+.about {
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+    .about .box {
+        padding: 5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 90%;
+        max-width: 900;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+        .about .box h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: #333;
+            margin-top: 0rem;
+            margin-bottom: 5rem;
+            font-weight: bold;
+        }
+
+        .about .box p {
+            font-size: 130%;
+            color: #333;
+            margin-bottom: 5rem;
+        }
+
+@media (max-width: 767px) {
+    .about .box p {
+        font-size: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+.about .box #info {
+    display: none;
+}
+
+.about .box .button_2 {
+    color: #3E3D40;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    border-width: 3px;
+    border-color: #3E3D40;
+    border-radius: 3px;
+    margin: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+}
+
+    .about .box .button_2:hover {
+        background-color: #3E3D40;
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 4rem;
+        border-width: 3px;
+        border-color: #3E3D40;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+
+.contacts {
+    padding-bottom: 8rem;
+}
+
+    .contacts h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #333;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+
+    .contacts h3 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 3rem;
+    }
+
+    .contacts h4 {
+        margin-bottom: 4rem;
+    }
+
+    .contacts .address {
+        margin-top: 6rem;
+    }
+
+@media (max-width: 767px) {
+    .contacts .address {
+        margin-top: 3rem;
+    }
+}
+
+.contacts .left_form {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 1rem;
+}
+
+.contacts .right_form {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 1rem;
+}
+
+.contacts .bottom_form {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 1rem;
+}
+
+.button_1 {
+    background-color: none;
+    color: #3E3D40;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-width: 3px;
+    border-color: #fff;
+    border-radius: 25px;
+    margin: 1rem;
+    font-weight: bold;
+    float: right;
+}
+
+    .button_1:hover {
+        background-color: #3E3D40;
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border-width: 3px;
+        border-color: #3E3D40;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+
+.social {
+    list-style-type: none;
+    padding: 0px;
+}
+
+    .social i {
+        font-size: 3rem;
+        margin-top: 10px;
+        padding: 3%;
+        color: #d3d3d3;
+    }
+
+        .social i:hover {
+            color: #3E3D40;
+        }
+
+@media (max-width: 767px) {
+    .social li {
+        display: inline;
+        margin: 0.5rem;
+    }
+}
+
+.map-google-embed iframe {
+    width: 100%;
+    display: block;
+}
+
+.footer-main {
+    padding: 6rem 0rem;
+    background-color: #3E3D40;
+    border-top: 5px solid #fff;
+}
+
+    .footer-main p {
+        color: #fff;
+    }
+
+    .footer-main img {
+        margin-bottom: 2rem;
+        padding-top: 1.2rem;
+    }
+
+    .footer-main .bottom-subscribe {
+        background: transparent;
+        padding: 1rem;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .footer-main .footer-2 h3 {
+        color: #fff;
+    }
+
+    .footer-main .footer-2 button {
+        float: right;
+    }
+
+    .footer-main .footer-2 input {
+        border: 2px solid #fff;
+    }
+
+    .footer-main .footer-3 {
+        margin-top: 6rem;
+        border-left: 2px solid #fff;
+    }
+
+@media (max-width: 767px) {
+    .footer-main .footer-3 {
+        border-top: 2px solid #fff;
+        border-left: none;
+        margin-top: 10rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-main .footer-3 p {
+        padding: 1rem;
+    }
+}
+
+
+
+/*SignUp Page */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #DDD;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 800px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 200px;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 450px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-bottom: 2px solid #16a085;
+        color: #16a085;
+        transition: 0.2s ease;
+    }
+
+input[type="submit"] {
+    margin-top: 28px;
+    width: 440px;
+    height: 40px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+        opacity: 0.8;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        transition: 0.1s ease;
+    }
+
+    input[type="submit"]:active {
+        opacity: 1;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        transition: 0.1s ease;
+    }
+
+.or {
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    width: 40px;
+    height: 40px;
+    background: #DDD;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 40px;
+    text-align: center;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+    background-image: url('http://wallpapercave.com/wp/GQn5K5c.jpg')
+}
+
+    .right .loginwith {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 28px;
+        color: #FFF;
+        text-align: center;
+    }
+
+button.social-signin {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+    button.social-signin:hover,
+    button.social-signin:focus {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        transition: 0.2s ease;
+    }
+
+    button.social-signin:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        transition: 0.2s ease;
+    }
+
+    button.social-signin.facebook {
+        background: #32508E;
+    }
+
+    button.social-signin.twitter {
+        background: #55ACEE;
+    }
+
+    button.social-signin.google {
+        background: #DD4B39;
+    }
+
+/* button in carousel */
+
+.button5 {
+    border-radius: 50%;
+    background: DodgerBlue;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+centrum {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    display: block;
+}
+
+/* Credit to bootsnipp.com for the css for the color graph */
+.colorgraph {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+.modal-ku {
+    width: 850px;
+    margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+
+background-image: url(../images/works.png); background-repeat: no-repeat; background-position: center; background-size: cover; padding-bottom: 4rem;
+}
+
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+    position: absolute;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+
+#boxes .window {
+    position: absolute;
+    width: 440px;
+    height: 640px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    `
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+    width: 700px;
+    height: 500px;
+}
+
+/* form */
+body {
+    background: #fff;
+}
+
+.glyphicon-lock {
+    color: #006400;
+}
+
+.form-body {
+    border: 5px solid Black;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 500px;
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.login-form {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-top: 3px solid#3e4043;
+}
+
+.innter-form {
+    padding-top: 40px;
+}
+
+.final-login li {
+    width: 50%;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+    .nav-tabs > li {
+        color: #222 !important;
+    }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            color: #fff;
+            background-color: #d14d42;
+            border: none !important;
+            border-bottom-color: transparent;
+            border-radius: none !important;
+        }
+
+        .nav-tabs > li > a {
+            margin-right: 10px;
+            line-height: 1.428571429;
+            border: none !important;
+            border-radius: none !important;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+.social-login {
+    text-align: center;
+    font-size: 12px;
+}
+
+    .social-login p {
+        margin: 15px 0;
+    }
+
+    .social-login ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+        .social-login ul li {
+            width: 33%;
+            float: left;
+            clear: fix;
+        }
+
+            .social-login ul li a {
+                font-size: 13px;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+                display: block;
+            }
+
+            .social-login ul li:nth-child(1) a {
+                background: #3b5998;
+            }
+
+            .social-login ul li:nth-child(2) a {
+                background: #e74c3d;
+            }
+
+            .social-login ul li:nth-child(3) a {
+                background: #3698d9;
+            }
+
+.sa-innate-form input[type=text], input[type=password], input[type=file], textarea, select, email {
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid#ccc;
+    outline: none;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.sa-innate-form input[type=submit] {
+    border: 1px solid#e64b3b;
+    background: #e64b3b;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+    .sa-innate-form input[type=submit]:hover {
+        border: 1px solid#db3b2b;
+        background: #db3b2b;
+        color: #fff;
+    }
+
+.sa-innate-form button {
+    border: 1px solid#e64b3b;
+    background: #e64b3b;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+    .sa-innate-form button:hover {
+        border: 1px solid#db3b2b;
+        background: #db3b2b;
+        color: #fff;
+    }
+
+.sa-innate-form p {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+lin {
+    border: 10px solid#e64b3b;
+}
+
+
+successModalcss {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+#boxes #dialog2 {
+    width: 700px;
+    height: 700px;
+}
+/*map size
+    #map {
+    height: 300px;
+    width: 800px;
+}
+
+*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 4em; /* needs to be defined in this case so that the children know what they should be 100% height of */
+    /* just for show */
+    background-color: none;
+    border: none;
+    padding: .5em;
+}
+
+.your-input, .your-button {
+    display: inline-block;
+    /* aligned to each other and not the .wrapper */
+    height: 100%;
+    /* already was inline by dephault - but just to be clear */
+    vertical-align: middle;
+}
+
+.your-input {
+    margin: 0;
+    padding: 0;
+    width: 20em; /* arbitrary */
+    text-indent: 1em;
+    border: 1px solid black;
+}
+
+.your-button {
+    /* whatevers */
+    background: lightblue;
+    border: 1px solid black;
+    border-left: 0;
+    width: 6em;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}

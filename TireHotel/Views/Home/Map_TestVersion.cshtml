@@ -1,0 +1,374 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WWAIT</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 70%;
+        }
+
+        .samping {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 30%;
+            overflow: auto
+        }
+
+            .samping div {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box
+            }
+    </style>
+</head>
+<body>
+    <body>
+        <h2>WWAIT MAP ALFA 0.0</h2>
+    </body>
+    <div id="map"></div>
+    <div class="samping">
+        <div>
+            <input type="text" id="address" placeholder="Address" title="Address" />
+            <select id="type">
+                <option value="Education">Education</option>
+                <option value="Catering">Catering</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Administrative">Administrative</option>
+                <option value="House">House</option>
+                <option value="Sport">Sport</option>
+            </select>
+            <textarea id="description" placeholder="Description" title="Description"></textarea>
+            <button id="add">Add Location</button>
+            <button id="delete">Delete all locations</button>
+            <hr>
+            <h3>Data user</h3>
+            <input type="text" id="location" placeholder="My Location" title="My Location" value="Valby" />
+            <button id="search">Search events near you</button>
+        </div>
+        <div>
+            <select id="filter">
+                <option value="Show all">All</option>
+                <option value="Education">Education</option>
+                <option value="Catering">Catering</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Administrative">Administrative</option>
+                <option value="House">House</option>
+                <option value="Sport">Sport</option>
+            </select>
+            <button id="filter_button">Filter</button>
+        </div>
+        <div id="panel">Place to show street routes</div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSog_oTV9NjxwOj8mvGkEd9VQZB8hOKHE&region=ID"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+  //Location of the user
+  var MyLocation = "Valby";
+
+  var map;
+  var location_b = [];
+  var route_b = [];
+  var iconBase = "https://maps.google.com/mapfiles/kml/shapes/";
+  var icons = {
+    Sport: {
+      icon: iconBase + 'swimming.png',// This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(10, 20),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 20)
+    },
+    Administrative: {
+      icon: iconBase + 'dollar.png',
+      scaledSize: new google.maps.Size(50, 50), // scaled size
+      origin: new google.maps.Point(0,0), // origin
+      anchor: new google.maps.Point(0, 0) // anchor
+    },
+    House: {
+      icon: iconBase + 'homegardenbusiness.png'
+    },
+    Catering: {
+      icon: iconBase + 'dining.png'
+    },
+    Installation: {
+      icon: iconBase + 'mechanic.png'
+    },
+    Education: {
+      icon: iconBase + 'info-i_maps.png'
+    },
+    Volunteer: {
+      icon: iconBase + 'man.png'
+    }
+  }
+  function initialize(){
+    var options = {
+      zoom:12,
+      center: {lat:55.676098, lng:12.568337},
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById('map'), options);
+    findLocation();
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+    function findLocation(){
+      $.ajax({
+        type: "GET",
+        url: "loc_mark.json",
+        dataType: "json",
+        success: function(data){
+          var d = new google.maps.InfoWindow();
+          var e;
+          $.each(data, function(i,datab){
+            e = new google.maps.Marker({
+              position: new google.maps.LatLng(datab.lat, datab.lng),
+              icon: icons[datab.type].icon,
+              map: map
+            });
+
+            location_b.push(e);
+
+            google.maps.event.addListener(e, 'click', (function(a,i){
+              return function (){
+                d.setContent('<div><h3>' + datab.address + '</h3><p>' + datab.description + '</p>'
+                + '<button class="route_b" data-address="' + datab.address + '">Distance</div>');
+                d.open(map, a)
+              }
+            })(e, i))
+          });
+        }
+      });
+  }
+    function addLocation(){
+      var address = $("#address").val();
+      //1if(https://developers.google.com/maps/documentation/geocoding/#StatusCodes
+      $.ajax({
+        type: "GET",
+        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address.replace(/\s+/g, '+') + '&sensor=false&key=AIzaSyAsuDntFAsFjcFWh8oSaQ0kiXSYmdOXOaQ',
+        dataType: "json",
+      }).done(function(data){
+      //  if(data."status" : "OK")
+          var d = new google.maps.InfoWindow();
+          var e;
+          var i;
+          e = new google.maps.Marker({
+              position: new google.maps.LatLng(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng),
+              icon: icons[$("#type").val()].icon,
+              map: map
+          });
+
+          location_b.push(e);
+
+            google.maps.event.addListener(e, 'click', (function(a,i){
+              return function (){
+                d.setContent('<div><h3>' + address + '</h3><p>' + $("#description").val() + '</p>'
+                + '<button class="route_b" data-address="' + address + '">Distance</div>');
+                d.open(map, a)
+              }
+            })(e, i));
+
+            var obj = {
+              lat: data.results[0].geometry.location.lat,
+              lng: data.results[0].geometry.location.lng,
+              address: address,
+              description: description,
+              type: icon
+            };
+            event.push(obj);
+      });
+    }
+    function deleteLocation(){
+
+      for(var i = 0; i < location_b.length; i++){
+        location_b[i].setMap(null)
+      }
+
+      event = [];
+    }
+    function deleteRoute(){
+
+      for(var i = 0; i < route_b.length; i++){
+        route_b[i].setMap(null)
+      }
+    }
+    function distance(address){
+      var a = new google.maps.DirectionsService();
+      var b = new google.maps.DirectionsRenderer();
+
+      b.setMap(map);
+
+      b.setPanel(document.getElementById('panel'));
+
+      route_b.push(b);
+
+      var request = {
+        origin: MyLocation,
+        destination: address,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING //See how to change if using bike
+      };
+      a.route(request, function(response, status){
+        if(status == google.maps.DirectionsStatus.OK){
+          b.setDirections(response);
+        }
+      });
+    }
+    function NearYou(from, callback){
+      var de = event.map(function(obj) {
+          return obj.address;
+      });
+      var distanceService = new google.maps.DistanceMatrixService();
+      distanceService.getDistanceMatrix({
+              origins: [from],
+              destinations: de,
+              travelMode: google.maps.TravelMode.DRIVING,
+              unitSystem: google.maps.UnitSystem.METRIC,
+              durationInTraffic: false,
+              avoidHighways: false,
+              avoidTolls: false
+          },
+          function(response, status) {
+              if (status !== google.maps.DistanceMatrixStatus.OK) {
+                  alert('Error:', status);
+              } else {
+                  var tes_near = response.rows[0].elements.map(function(obj) {
+                      return obj.distance.value;
+                  });
+                  var min = Math.min.apply(null, tes_near);
+                  callback(arraySearch(tes_near, min));
+              }
+          });
+    }
+    function arraySearch(ary, val) {
+        for (var i = 0; i < ary.length; i++)
+            if (ary[i] === val)
+                return i;
+        return false;
+    }
+    function filterEvents(){
+      deleteLocation();
+      $.ajax({
+        type: "GET",
+        url: "loc_mark.json",
+        dataType: "json",
+        success: function(data){
+
+          var d = new google.maps.InfoWindow();
+          var e;
+          $.each(data, function(i,datab){
+            if(datab.type == $("#filter").val() || $("#filter").val() =="Show all"){
+
+              e = new google.maps.Marker({
+                position: new google.maps.LatLng(datab.lat, datab.lng),
+                icon: icons[datab.type].icon,
+                map: map
+              });
+
+              location_b.push(e);
+
+              google.maps.event.addListener(e, 'click', (function(a,i){
+                return function (){
+                  d.setContent('<div><h3>' + datab.address + '</h3><p>' + datab.description + '</p>'
+                  + '<button class="route_b" data-address="' + datab.address + '">Distance</div>');
+                  d.open(map, a)
+                }
+              })(e, i))
+            }
+          });
+        }
+      });
+    }
+
+    $(function(){
+      $("#add").click(function(){
+        addLocation();
+      });
+      $("#delete").click(function(){
+        deleteLocation();
+      });
+      $("#filter_button").click(function(){
+        filterEvents();
+      });
+      $("#search").click(function() {
+          MyLocation = ($("#location").val() == '' ? MyLocation : $("#location").val());
+          $("#route").empty();
+          deleteRoute();
+          NearYou($("#location").val(), function(data) {
+              distance(event[data].alamat);
+          });
+      });
+      $("body").on('click', '.route_b', function(){
+        $("#panel").empty();
+
+        deleteRoute();
+        distance($(this).data('address'));
+      });
+    });
+    </script>
+    <div id="paypal-button"></div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+  ">
+        <input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    <script>
+
+        paypal.Button.render({
+
+            //env: 'production',
+            env: 'sandbox',
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+             client: {
+             sandbox:    'AFcWxV21C7fd0v3bYYYRCpSSRl31ABy5Ld1cCJ.LmXuTm8s76AK35ls6',
+             production: 'xxxxxxxxx'//insert productin client id
+           },
+           // Show the buyer a 'Pay Now' button in the checkout flow
+           commit: true,
+
+            // payment() is called when the button is clicked
+            payment: function(data, actions) {
+
+              // Make a call to the REST api to create the payment
+              return actions.payment.create({
+                  payment: {
+                      transactions: [
+                          {
+                              amount: { total: '1.00', currency: 'USD' }
+                          }
+                      ]
+                  }
+              });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function(data, actions) {
+
+              // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function(payment) {
+                  window.alert('Payment Complete!');
+              // The payment is complete!
+              // You can now show a confirmation message to the customer
+              });
+           }
+
+        }, '#paypal-button');
+    </script>
+</body>
+</html>
+<h2>Map</h2>

@@ -1,0 +1,48 @@
+﻿.jumbotron-billboard .img {
+    margin-bottom: 0px;
+    background-image: url("/images/tires.jpg");
+    
+    width: 100%;
+    height: 200%;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.jumbotron {
+    position: relative;
+    padding: 50px;
+}
+
+    .jumbotron .container {
+        z-index: 2;
+        position: relative;
+        z-index: 2;
+    }
+
+    /*@media all and (min-width:744px)*/
+._pcau1d0 {
+    color: #ffffff !important;
+    font-size: 44px !important;
+    line-height: 56px !important;
+    letter-spacing: -0.8px !important;
+    margin-bottom: 24px !important;
+    max-width: 430px !important;
+}
+
+
+._pcau1d00 {
+    color: #ffffff !important;
+    font-size: 25px !important;
+    line-height: 56px !important;
+    letter-spacing: -0.8px !important;
+    margin-bottom: 24px !important;
+    max-width: 430px !important;
+}
+
+h {
+    text-shadow: 2px 2px #FF0000;
+}

@@ -1,0 +1,151 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/Regshee.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+</head>
+
+<body style="padding-top:100px">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar__header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="~/Home/Index"></a>
+        </div>
+    <br />
+        <br />
+        <br />
+        <br />
+        <br /><br /><br />
+        <br />
+        <br />
+        <br />
+        <br /><br /><br />
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="well">
+                    <!--Table to capture username and password-->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="success">
+                                <th colspan="2">
+                                <b>Admin Login</b>
+                                    <a href="~/Loginn.cshtml" class="btn btn-success pull-right">
+                                        Employee
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                         
+
+
+
+                          
+                          
+
+                            <tr>
+                                <td colspan="12">
+
+                                    <div class="social-login">
+                                    
+                                        <ul>
+
+
+                                            <li><button class="fa fa-google-plus" id="btnGoogleLogin">Google+</button></li>
+
+
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Bootstrap alert to display error message if the login fails-->
+                    <div id="divError" class="alert alert-danger collapse">
+                        <a id="linkClose" href="#" class="close">&times;</a>
+                        <div id="divErrorText"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+
+    <script src="~/Scripts/GoogleAuthentication.js"></script>
+
+    @*davsse151@gmail.com*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getAccessToken();
+
+        $('#btnGoogleLogin').click(function () {
+            window.location.href = "/api/Account/ExternalLogin?provider=Google&response_type=token&client_id=self&redirect_uri=http%3A%2F%2Flocalhost%3A55149%2FLoginn.cshtml&state=mz0CgZk_uMGStiEHcf2rGflO_hqn61d2OY0cWfFFeD01";
+});
+
+        $('#btnFacebookLogin').click(function () {
+            window.location.href = "/api/Account/ExternalLogin?provider=Facebook&response_type=token&client_id=self&redirect_uri=http%3A%2F%2Flocalhost%3A55149%2FLoginn.cshtml&state=mz0CgZk_uMGStiEHcf2rGflO_hqn61d2OY0cWfFFeD01";
+
+        });
+
+            $('#linkClose').click(function () {
+                $('#divError').hide('fade');
+            });
+
+            $('#btnLogin').click(function () {
+                $.ajax({
+                    // Post username, password & the grant type to /token
+                    url: '/token',
+                    method: 'POST',
+
+                    contentType: 'application/json',
+                    data: {
+                        username: $('#txtUsername').val(),
+                        password: $('#txtPassword').val(),
+                        grant_type: 'password'
+                    },
+
+                    // When the request completes successfully, save the
+                    // access token in the browser session storage and
+                    // redirect the user to Data.html page. We do not have
+                    // this page yet. So please add it to the
+                    // EmployeeService project before running it
+                    success: function (response) {
+                        sessionStorage.setItem("accessToken", response.access_token);
+                        sessionStorage.setItem("userName", response.userName);
+                        window.location.href = "Index2.cshtml";
+
+                    },
+                    // Display errors if any in the Bootstrap alert <div>
+                    error: function (jqXHR) {
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

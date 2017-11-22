@@ -1,0 +1,690 @@
+﻿@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WWAIT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/Angular.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar__header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index"><img alt="logo" src="~/images/wwait3.png"></a>
+            </div>
+            <div class="navbar-collapse collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#categories"><u>Categories</u></a></li>
+                    <li><a href="#how-works"><u>How it works</u></a></li>
+                    <li><a href="#benefits"><u>Benefits</u></a></li>
+                    <li><a href="#about"><u>About us</u></a></li>
+                    <li><a href="#about"><u>Help</u> </a></li>
+
+                    <li><a href="~/Signup.cshtml"><u>Sign In</u></a></li>
+
+
+                    <li><a href="~/Loginn.cshtml"><u>Log In</u></a></li>
+                </ul>
+            </div>
+            <div class="container">
+
+
+
+
+                <div id="boxes">
+
+                    <!-- #customize your modal window here -->
+
+                    <div id="dialog" class="window container">
+
+                        <div class="form-body">
+                            <ul class="nav nav-tabs final-login">
+                                <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+                                <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="sectionA" class="tab-pane fade in active ">
+                                    <div class="innter-form">
+                                        <form class="sa-innate-form" method="post">
+                                            <label>Email Address</label>
+                                            <input type="text" name="username" placeholder="Username">
+                                            <label>Password</label>
+                                            <input type="password" name="password" placeholder="Password">
+                                            <button type="submit">Sign In</button>
+                                            <a href="">Forgot Password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="social-login">
+                                        <p>- - - - - - - - - - - - - Login With - - - - - - - - - - - - - </p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="sectionB" class="tab-pane fade">
+                                    <div class="innter-form">
+                                        <form class="sa-innate-form" method="post">
+                                            <label>Name</label>
+                                            <input type="text" name="username" placeholder="UserName">
+                                            <label>Email Address</label>
+                                            <input type="text" name="username">
+                                            <label>Password</label>
+                                            <input type="password" name="password">
+                                            <button type="submit">Join now</button>
+                                            <p>By clicking Join now, you agree to Wwait's User <a>Agreement</a>,<a>Privacy Policy</a>, and <a>Cookie Policy.</a></p>
+                                        </form>
+                                    </div>
+                                    <div class="social-login ">
+                                        <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                                        <ul>
+
+                                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- close button is defined as close class -->
+
+                    </div>
+
+                    <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+                    <div id="mask"></div>
+                </div>
+
+
+            </div>
+
+            <div class="container">
+
+
+
+
+                <div id="boxes">
+
+                    <!-- #customize your modal window here -->
+
+                    <div id="dialog2" class="window container">
+
+                        <div class="form-body">
+                            <ul class="nav nav-tabs final-login">
+
+                                <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+
+                            </ul>
+                            <div class="tab-content">
+
+                                <div id="sectionB" class="tab-pane fade in active">
+                                    <div class="innter-form">
+                                        <form class="sa-innate-form" method="post">
+                                            <label>Name</label>
+                                            <input type="text" name="username" placeholder="Username">
+                                            <label>Email Address</label>
+                                            <input type="text" name="Email" placeholder="Email">
+                                            <label>Password</label>
+                                            <input type="password" name="password" placeholder="Password">
+                                            <button type="submit">Join now</button>
+                                            <p>By clicking Join now, you agree to Wwait's User <a>Agreement</a>,<a>Privacy Policy</a>, and <a>Cookie Policy.</a></p>
+                                        </form>
+                                    </div>
+                                    <div class="social-login">
+                                        <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- close button is defined as close class -->
+
+                    </div>
+
+                    <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+                    <div id="mask"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        @*map size can be moved to css file*@
+        <style>
+            #map {
+                height: 400px;
+                width: 50%;
+            }
+
+            /*.samping {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 100%;
+                width: 30%;
+                overflow: auto
+            }
+
+                .samping div {
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box
+                }*/
+            #searchJobs {
+                height: 400px;
+                width: 50%;
+            }
+
+            #searchJobsBar {
+                height: 400px;
+                width: 50%;
+            }
+        </style>
+
+        <div class="hero-text text-center">
+
+            <div class="subtitle">
+                <h2><b>... IS A FAST MOVING JOB PLATFORM THAT CONNECTS USERS SEEKING TO SELL/BUY SKILLS AND TALENTS IN A MOST EFFECTIVE WAY</b>  </h2>
+            </div>
+
+            <div class="subtitle">
+                <br />
+                <h2>why wait when you can go and create value?</h2>
+                <br />
+
+
+                <div class="wrapper">
+
+                    <input style="height:50px; width:700px; border: 2px solid SlateGray; margin : 0 auto;" class="pull-center your-input" type="text" id="StartPosition" placeholder="Where do you want to search?" title="StartPosition" />
+                    <button class="your-button" id="SearchLocation" onclick="OpenMapWithLocation()" data-style="expand-right">Search <span class="glyphicon glyphicon-search"></span></button>
+                  @*<input type="text" id="StartPosition" placeholder="Where do you want to search?" title="StartPosition" />
+                  <button id="SearchLocation" onclick="OpenMapWithLocation()">Search</button>*@
+                </div>
+
+
+
+
+                <br />
+
+
+
+
+
+                <script>
+                  function OpenMapWithLocation() {
+                    var address = $("#StartPosition").val();
+                    
+                    $.ajax({
+                      type: "GET",
+                      url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address.replace(/\s+/g, '+') + '&sensor=false&key=AIzaSyAsuDntFAsFjcFWh8oSaQ0kiXSYmdOXOaQ',
+                      dataType: "json",
+                    }).done(function (data) {
+                      window.location = 'http://localhost:55149/Home/Map?lat=' + data.results[0].geometry.location.lat + '&lng=' + data.results[0].geometry.location.lng;
+                    });
+                  }
+                </script>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="categories">
+        <div class="categories container">
+            <div class="title text-center">
+                <h1>categories</h1>
+                <p>WWAIT provides a platform to access a pool of different jobs available. Do not wait and pick a job category of your interest.</p>
+            </div>
+            <div class="items">
+                <div class="row  text-center">
+
+                    <div class="container">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#" class=""><img class="pics" alt="pics" src="~/images/education.png"></a>
+                            <h3>Education</h3>
+                            <span class="more">
+                                Are you struggling with your homework or you want to learn a new language
+                                individually or as a part of the group? Please post your job description here.
+                                Unique opportunity to display your skills and talents. Can you play any instrument,
+                                can you speak a language, can you help students with a project/thesis? WhyWait! Join us now!
+                            </span>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/catering.png"></a>
+                            <h3>Catering</h3>
+                            <span class="more">
+                                Do you need someone to help you to provide food and drink for a large number of people or for different arrangements?
+                                Please post your job description here. Are you interested in providing food and drink for a large number of people?
+                                Post your job description if you need help with catering?
+                                Do you want to work as a waiter, bartender, dishwasher, greeting guests, or food runner and earn some money? WhyWait! Join us now!
+                            </span>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/volunteer.png"></a>
+                            <h3>Volunteer</h3>
+                            <span class="more">
+                                Are you struggling with some tasks based on your needs for example:
+                                to do your groceries, help with cooking and gardening etc? Do you want to make a difference in people’s lives?<br> Interested in providing a variety of different services for no financial gain to benefit another person’s. WhyWait! Join us now!
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/Sports-Golf-icon.png"></a>
+                            <h3>Sports</h3>
+                            <span class="more">Do you want to try yoga ? Do you want to do sports, but you don’t know where, with whom? or maybe you’re just looking for someone to motivate and do sports with you? Do you have your own space (basement or studio), where you can teach yoga or do you want to form a sport group to share your interest?<br> Are you personal fitness and yoga instructor? Build a team of enthusiasts and do sports together. WWAIT gives you an opportunity to find sport enthusiasts and you can earn extra money.You can form a group and invite as many people as you want. WhyWait! Join us now!</span>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/repair.png"></a>
+                            <h3>Handyman</h3>
+                            <span class="more">Do you need someone who can fix, repair and install things? Please post your job description here. Job seeker message: interesting in and knowing how to fix, repair and install things? <br>Post your job description if you need help with handy jobs? Do you know how to paint, fix, repair and assemble? Why Wait join us now?</span>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/administrative.png"></a>
+                            <h3>Administrative</h3>
+                            <span class="more">
+                                Do you need someone handling calls, answering emails, planning calendar, making spreadsheets, doing bookkeeping or performing simple administrative tasks? Please post your job description here. Are you interested in handling
+                                calls, correspondence and simple office tasks? Do you have basic IT knowledge? WhyWait! Join us now!
+                            </span>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="container">
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/house.png"></a>
+                            <h3>House/Garden</h3>
+                            <span class="more">Do you need someone who can help you with your household or garden? Please post your job description here. Are you interested in helping with home cleaning, gardening, dog sitting or ironing tasks? WhyWait! Join us now!</span>
+                        </div>
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/health-care_318-103328.jpg"></a>
+                            <h3>Care</h3>
+                            <span class="more">Do you need someone who can help you with your household or garden? Please post your job description here. Are you interested in helping with home cleaning, gardening, dog sitting or ironing tasks? WhyWait! Join us now!</span>
+                        </div>
+                        <div class="item col-xs-12 col-sm-6 col-md-4 mx-auto">
+                            <a href="#"><img class="pics" alt="pics" src="~/images/oher.png"></a>
+                            <h3>Other</h3>
+                            <span class="more">Do you need someone who can help you with your household or garden? Please post your job description here. Are you interested in helping with home cleaning, gardening, dog sitting or ironing tasks? WhyWait! Join us now!</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-works">
+        <div class="how-works">
+            <div class="container text-center">
+                <h1>How it works</h1>
+                <p> WWAIT connects users seeking to sell-buy skills, talents and competencies in a most effective and efficient way. Let us take care of your needs...</p>
+            </div>
+
+            <div class="field container text-center">
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#"><img class="pics" alt="pics" src="~/images/loupe.png"></a>
+                    <h3>
+                        Post/Search for a job<br />
+
+
+                    </h3>
+                </div>
+
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#"><img class="pics" alt="pics" src="~/images/matched.png"></a>
+                    <h3>Get matched</h3>
+                </div>
+
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#"><img class="pics" alt="pics" src="~/images/accept.png"></a>
+                    <h3>Accept</h3>
+                </div>
+
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#">
+                        <img class="pics" alt="pics" src="~/images/microsoft-user-group-icon_236609.png">
+                        <h3>
+
+                            Form/Search for a group
+
+                        </h3>
+                </div>
+
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#"><img class="pics" alt="pics" src="~/images/next.png"></a>
+                    <h3>Get started</h3>
+                </div>
+
+                <div class="item col-xs-12 col-sm-4">
+                    <a href="#"><img class="pics" alt="pics" src="~/images/rating.png"></a>
+                    <h3>Rate me</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="benefits">
+        <div class="benefits">
+            <div class="container text-center">
+                <h1>benefits</h1>
+                <p>
+                    Forget about writing hundreds of CVs and cover letters without any responses. Forget about job interviews. Irrespective of your age/gender/education we create opportunities for all to use your skills and talents in the most effective and efficient way. If you are a young graduate struggling to find a job or a middle age professional wanting to change career path or a retired person who has experience and skills– we are here to help you!
+                </p>
+
+            </div>
+
+            <div class="field container">
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Easy way to trade skills/talents</h3>
+                    <p>
+                        We offer one centralized pool of skills and talents. One click and you can find/post a job description or form a group.
+
+                    </p>
+                </div>
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Time-saving</h3>
+                    <p>We offer	one	user-friendly platform which helps to save your time.</p>
+                </div>
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Map based</h3>
+                    <p>We offer a map based platform which allows easily to explore what jobs and groups are available in your area.</p>
+                </div>
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Flexibility</h3>
+                    <p>We offer freedom to manage your own time depending on your availability, needs and priorities. Be in control - be your own boss! </p>
+                </div>
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Instant	reward</h3>
+                    <p>No need to wait for a monthly salary. Get paid after the work is done. </p>
+                </div>
+
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Review system</h3>
+                    <p>
+                        We offer opportunity to write a feedback and rate job seeker's performance, thus helping to find a right person for a right task.
+                    </p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <h3>Group activities</h3>
+                    <p>
+                        We offer an easy way to form a group of people for various educational and physical activities. Share your interest with others and earn money.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about">
+        <div class="about">
+            <div class="box container text-center">
+                <h1>about us</h1>
+                <p>
+                    WWAIT was born after thinking how to empower people’s skills and create job opportunities. WWAIT is based from our personal experience and stories of our friends. After graduation, some of us did not have opportunity to try different jobs while thinking of what to do next in our life’s. After finishing universities, we were wasting precious time of writing and sending job applications for months, thus putting ourselves in an endless circle of unemployment. We came up with a solution – WhyWait!
+                </p>
+
+                <p id="info">
+                    WWAIT wants to enable short and longer employment for skilled and unskilled jobs. The idea of WWAIT to pull the jobs available on the map and list in specific locations. This eliminates the need to send CVs and applications and to attend job interviews. WWAIT provides a opportunity to  arrange different groups for different sports and education activities.
+                    If you want to learn or looking to expand your skills in certain area you can find sport enthusiast or people who wants to learn something new. Why wait if you can create a value for yourself and society?
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contacts">
+            <div class="container text-center">
+                <h1>Contact Us</h1>
+
+                <div>
+                    <p>Centerparken</p>
+                    <p>Copenhagen</p>
+                    <p>(401) 1234 567</p>
+                    <p>hello@wwait.dk</p>
+                    <p>www.wwait.dk</p>
+                </div>
+                <hr>
+                <div>
+
+
+                    <div class="cata">
+                        <center>
+                            <input type="text" placeholder="Name">
+                        </center>
+                    </div>
+
+                    <div class="cata">
+                        <center>
+                            <input type="text" placeholder="E-mail">
+                        </center>
+
+                    </div>
+
+                    <div>
+                        <center>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="width:550px"></textarea>
+                        </center>
+                    </div>
+
+                    <center>
+                        <button type="button" class="btn btn-default">Send message</button>
+                    </center>
+                </div>
+
+
+
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-1 col-sm-4">
+                <img alt="logo" src="images/wwait3.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                <p>Legal disclaimer </p>
+            </div>
+
+            <div class="footer-2 col-sm-4">
+                <h3>Subscribe</h3>
+                <div class="bottom-footer col-sm-12">
+                    <input type="text" class="bottom-subscribe" placeholder="E-mail">
+                    <button type="button" class="btn btn-default button_1">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-3 col-sm-4">
+                <p>
+
+                </p>
+                <p>&copy; 2017 WWAIT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more >";
+    var lesstext = "Show less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+    </script>
+
+
+
+    <script type="text/javascript" language="javascript">
+        $(function () {
+          $('.button-checkbox').each(function () {
+
+                // Settings
+                var $widget = $(this),
+                    $button = $widget.find('button'),
+                    $checkbox = $widget.find('input:checkbox'),
+                    color = $button.data('color'),
+                    settings = {
+                        on: {
+                            icon: 'glyphicon glyphicon-check'
+                        },
+                        off: {
+                            icon: 'glyphicon glyphicon-unchecked'
+                        }
+                    };
+
+                // Event Handlers
+                $button.on('click', function () {
+                    $checkbox.prop('checked', !$checkbox.is(':checked'));
+                    $checkbox.triggerHandler('change');
+                    updateDisplay();
+                });
+                $checkbox.on('change', function () {
+                    updateDisplay();
+                });
+
+                // Actions
+                function updateDisplay() {
+                    var isChecked = $checkbox.is(':checked');
+
+                    // Set the button's state
+                    $button.data('state', (isChecked) ? "on" : "off");
+
+                    // Set the button's icon
+                    $button.find('.state-icon')
+                        .removeClass()
+                        .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+                    // Update the button's color
+                    if (isChecked) {
+                        $button
+                            .removeClass('btn-default')
+                        .addClass('btn-' + color + ' active');
+                    }
+                    else {
+                        $button
+                            .removeClass('btn-' + color + ' active')
+                            .addClass('btn-default');
+                    }
+                }
+
+                // Initialization
+                function init() {
+
+                    updateDisplay();
+
+                    // Inject the icon if applicable
+                    if ($button.find('.state-icon').length == 0) {
+                        $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
+                    }
+                }
+                init();
+            });
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>
